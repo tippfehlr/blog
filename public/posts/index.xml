@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on tippfehlr’s blog</title>
+		<link>http://localhost:1313/posts/</link>
+		<description>Recent content in Posts on tippfehlr’s blog</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<lastBuildDate>Fri, 01 Mar 2024 11:22:51 +0100</lastBuildDate>
+		<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Helloworld</title>
+			<link>http://localhost:1313/posts/helloworld/</link>
+			<pubDate>Fri, 01 Mar 2024 11:22:51 +0100</pubDate>
+			
+			<guid>http://localhost:1313/posts/helloworld/</guid>
+			<description>Hallo Test</description>
+			<content type="html"><![CDATA[<p>Hallo Test</p>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>

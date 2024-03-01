@@ -1,0 +1,30 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'tippfehlr’s blog'
+theme = 'hermit-v2'
+# enableGitInfo = true
+
+[params]
+relatedPosts = true
+dateform = "2006-01-02 15:04"
+dateformShort = "2006-01-02"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+
+[params.author]
+name = "tippfehlr"
+about = "about"
+
+[[params.socialLinks]]
+name = "github"
+url = "https://github.com/tippfehlr/"
+
+[menu]
+[[menu.main]]
+name = "Posts"
+url = "posts/"
+weight = 10
+
+[[menu.main]]
+name = "About"
+url = "about"
