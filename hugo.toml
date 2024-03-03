@@ -50,17 +50,17 @@ logoHomeLink = "/"
 # alt = "Your example logo alt text"
 
 [[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about"
-
-[[menu.main]]
-identifier = "blog"
-name = "Posts"
+identifier = "posts"
+name = "posts"
 url = "/posts"
 
+[[menu.main]]
+identifier = "about"
+name = "about"
+url = "/about"
+
 [params.footer]
-trademark = 2024
+# trademark = 2024
 rss = true
 # copyright = true
 # author = true
