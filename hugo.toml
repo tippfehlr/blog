@@ -1,30 +1,56 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://jonathanpc:1313'
 languageCode = 'en-us'
 title = 'tippfehlr’s blog'
-theme = 'hermit-v2'
-# enableGitInfo = true
+theme = 'hello-friend-ng'
+paginate = 10
+enableGitInfo = true
 
 [params]
-relatedPosts = true
 dateform = "2006-01-02 15:04"
 dateformShort = "2006-01-02"
 dateformNum = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04"
 
-[params.author]
-name = "tippfehlr"
-about = "about"
+homeSubtitle = "My own little personal blog. My space. Mine!"
+disableReadOtherPosts = false
+enableSharingButtons = false
+enableGlobalLanguageMenu = false
 
-[[params.socialLinks]]
-name = "github"
-url = "https://github.com/tippfehlr/"
+# description = "tippfehlr's blog"
+# keywords = "blog, programming"
+# images = [""]
 
-[menu]
+# [params.author]
+# name = "tippfehlr"
+# about = "about"
+
+# [taxonomies]
+# category = "blog"
+# tag = "tags"
+# series = "series"
+
+# [languages.en]
+# title = "tippfehlr’s blog"
+# keywords = ""
+# copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+# readOtherPosts = "Read other posts"
+
+# [languages.en.params]
+# subtitle = "My own little personal blog. My space. Mine!"
+
+[languages.en.params.logo]
+logoText = "tippfehlr’s blog"
+logoHomeLink = "/"
+# or
+# path = "/img/your-example-logo.svg"
+# alt = "Your example logo alt text"
+
 [[menu.main]]
-name = "Posts"
-url = "posts/"
-weight = 10
-
-[[menu.main]]
+identifier = "about"
 name = "About"
-url = "about"
+url = "/about"
+
+[[menu.main]]
+identifier = "blog"
+name = "Posts"
+url = "/posts"
