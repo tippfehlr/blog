@@ -15,14 +15,18 @@ homeSubtitle = "My own little personal blog. My space. Mine!"
 disableReadOtherPosts = false
 enableSharingButtons = false
 enableGlobalLanguageMenu = false
+gitUrl = "https://github.com/tippfehlr/blog/commit/"
+enableThemeToggle = true
 
-# description = "tippfehlr's blog"
-# keywords = "blog, programming"
-# images = [""]
+description = "tippfehlr's blog"
+keywords = "blog, programming"
+images = [""]
 
-# [params.author]
-# name = "tippfehlr"
-# about = "about"
+plausibleDataDomain = "plausible.tippfehlr.dev"
+plausibleScriptSource = "https://plausible.tippfehlr.dev/js/script.js"
+
+[params.author]
+name = "tippfehlr"
 
 # [taxonomies]
 # category = "blog"
@@ -54,3 +58,9 @@ url = "/about"
 identifier = "blog"
 name = "Posts"
 url = "/posts"
+
+[params.footer]
+trademark = 2024
+rss = true
+# copyright = true
+# author = true
