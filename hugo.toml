@@ -22,7 +22,7 @@ description = "tippfehlr's blog"
 keywords = "blog, programming"
 images = [""]
 
-plausibleDataDomain = "https://plausible.tippfehlr.dev"
+plausibleDataDomain = "blog.tippfehlr.dev"
 plausibleScriptSource = "https://plausible.tippfehlr.dev/js/script.js"
 
 [params.logo]
