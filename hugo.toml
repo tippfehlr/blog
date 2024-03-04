@@ -25,29 +25,22 @@ images = [""]
 plausibleDataDomain = "https://plausible.tippfehlr.dev"
 plausibleScriptSource = "https://plausible.tippfehlr.dev/js/script.js"
 
+[params.logo]
+# logoMark = ">"
+# logoCursorPathname = "/img/cursor.svg"
+logoCursorDisabled = true
+# logoCursorColor = "#000000"
+# logoCursorAnimate = true
+logoText = "tippfehlr’s blog"
+logoHomeLink = "/"
+
 [params.author]
 name = "tippfehlr"
 
-# [taxonomies]
-# category = "blog"
-# tag = "tags"
-# series = "series"
-
-# [languages.en]
-# title = "tippfehlr’s blog"
-# keywords = ""
-# copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-# readOtherPosts = "Read other posts"
-
-# [languages.en.params]
-# subtitle = "My own little personal blog. My space. Mine!"
-
-[languages.en.params.logo]
-logoText = "tippfehlr’s blog"
-logoHomeLink = "/"
-# or
-# path = "/img/your-example-logo.svg"
-# alt = "Your example logo alt text"
+[taxonomies]
+category = "blog"
+tag = "tags"
+series = "series"
 
 [[menu.main]]
 identifier = "posts"
