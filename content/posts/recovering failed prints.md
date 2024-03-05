@@ -1,17 +1,14 @@
 ---
 title: "Recovering failed prints"
+description: "If your print has just stopped for some reason, it might be recovered!"
 date: 2023-09-23T20:00:00+01:00
 draft: true
 toc: false
-images:
-  - "./static/img/2023-09-24 Articulated Night Spirit.png"
+cover: images/2023-09-24-articulated-night-spirit.png
+coverCaption: "This is the model that lead to this write-up."
 tags:
   - 3dprinting
 ---
-
-*This is the model that lead to this write-up.*
-
-**If the print has just stopped for some reason, it might be recovered!**
 
 - Empty filament (and no sensor)
 - Klipper restart/lost connection
