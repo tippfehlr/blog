@@ -30,7 +30,16 @@ If you saved your mesh, then you only have to load it.
 Otherwise, check the console if the probe data is still available. If yes, then save these values to the end of your printer.cfg:
 
 ```
-*add the bed_mesh saved config*
+#*# <---------------------- SAVE_CONFIG ---------------------->
+#*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
+#*#
+#*# [bed_mesh default]
+#*# version = 1
+#*# points =
+#*# 	  -0.056875, -0.142500, -0.141250, -0.232500
+#*# 	  -0.201250, -0.255625, -0.164375, -0.196250
+#*# 	  -0.108125, -0.231250, -0.232500, -0.350000
+#*# 	  -0.119375, -0.286250, -0.288125, -0.416875
 ```
 
 The `z_offset` from `[bltouch]` has to be subtracted from the probe values. If there are multiple values for each point, take the average.
