@@ -15,50 +15,45 @@ tags:
 - Power outage
 - etc.
 
-> [!warning]
-> **KEEP THE BED HEATED!**
+> **KEEP THE BED HEATED!** \
 > Otherwise the print might come loose and you have to start again.
 
-> [!warning]
-> **ONLY MOVE THE NOZZLE WHILE IT'S HOT!**
+> **ONLY MOVE THE NOZZLE WHILE IT'S HOT!** \
 > The nozzle might stick to the print, ripping it lose.
 
 ## 1. Recovering bed leveling mesh
 
-> [!info]
 > If you’ve enabled bed mesh fadeout, you don’t need the bed mesh above `fade_end`.
 
-- If you saved your mesh, then you only have to load it.
-- Otherwise, check the console if the probe data is still available. If yes, then save these values to the end of your printer.cfg:
+If you saved your mesh, then you only have to load it.
+
+Otherwise, check the console if the probe data is still available. If yes, then save these values to the end of your printer.cfg:
+
 ```
 *add the bed_mesh saved config*
 ```
 
-> [!important]
-> The `z_offset` from `[bltouch]` has to be subtracted from the probe values. If there are multiple values for each point, take the average.
-> This is important so you end up with the same mesh that the start of the print used too.
+The `z_offset` from `[bltouch]` has to be subtracted from the probe values. If there are multiple values for each point, take the average.
+This is important so you end up with the same mesh that the start of the print used too.
+
+> If you can’t get your leveling mesh, it might be worth to try continuing without it
 
 ## 2. Recovering nozzle position
 
-> [!info]
-> for this method, the x and y coordinates aren’t important. (I also had no way of measuring or retrieving them).
+For this method, the x and y coordinates aren’t important. (I also had no way of measuring or retrieving them).
 
 1. Measure the height of the (already printed!) model *correctly*.
-2. If you believe you have the height of the currently printed layer, *measure again*.
+2. If you believe you have the height of the currently printed layer, *measure again* :)
 
-> [!tip]
-> You pretty much **need** a caliper for this. Ideally, your accuracy has to be within 1–2 layers.
-> Use the end to measure pockets.
+You pretty much **need** a caliper for this. Ideally, your accuracy has to be within 1–2 layers. \
+Use the end of the caliper to measure pockets.
+
 ## 3. Modifying the g-code file
 
-> [!warning]
-> If this is your only copy of the file, make a **backup**. Reslicing may produce a different result.
-
-1. Search for the next layer (the one that would have been printed next). For this, add your layer height to your measurement. **Make sure that you are at that layer and not only retracting to that Z value**
+0. If this is your only copy of the file, make a **backup**. Reslicing may produce a different result.
+1. Search for the next layer (the one that would have been printed next). For this, add your layer height to your measurement. **Make sure that you are at that layer and not only retracting to that Z value**.
 2. Delete everything before that line.
 
-> [!important]
-> skip the rest of the currently printed layer and start straight with the next layer.
 ```bash
 ed -s file.gcode <<< $'1,999999d\nwq'
 ```
