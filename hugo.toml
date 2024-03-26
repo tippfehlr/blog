@@ -37,6 +37,9 @@ logoHomeLink = "/"
 [params.author]
 name = "tippfehlr"
 
+[params.portrait]
+path = "/android-chrome-512x512.png"
+
 [taxonomies]
 category = "blog"
 tag = "tags"
