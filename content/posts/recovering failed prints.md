@@ -51,8 +51,8 @@ This is important so you end up with the same mesh that the start of the print u
 
 For this method, the x and y coordinates aren’t important. (I also had no way of measuring or retrieving them).
 
-1. Measure the height of the (already printed!) model *correctly*.
-2. If you believe you have the height of the currently printed layer, *measure again* :)
+1. Measure the height of the (already printed!) model _correctly_.
+2. If you believe you have the height of the currently printed layer, _measure again_ :)
 
 You pretty much **need** a caliper for this. Ideally, your accuracy has to be within 1–2 layers. \
 Use the end of the caliper to measure pockets.
@@ -66,21 +66,25 @@ Use the end of the caliper to measure pockets.
 ```bash
 ed -s file.gcode <<< $'1,999999d\nwq'
 ```
-*999999 is the last line to delete. (use **bash**, does not work in fish)*
 
+```js
+let i = 1;
+```
+
+_999999 is the last line to delete. (use **bash**, does not work in fish)_
 
 3. Add to the beginning of the file:
-	- temperatures
-	- Set the Z value to the current position of the nozzle. Alternatively, home if and where possible (first method might be better) (`SET_KINEMATIC_POSITION X=0 Y=0 Z=0`)
-	- Also set the extruder position (`G92 E000.000`)
-	- enable the fan
-	- enable the bed mesh
+
+- temperatures
+- Set the Z value to the current position of the nozzle. Alternatively, home if and where possible (first method might be better) (`SET_KINEMATIC_POSITION X=0 Y=0 Z=0`)
+- Also set the extruder position (`G92 E000.000`)
+- enable the fan
+- enable the bed mesh
 
 ## 4. resuming
 
-> [!warning]
 > Be sure that there is no filament oozing from the nozzle. if there is, remove it while the nozzle is heated. You can freely move the head as long as the coordinates are set.
 
 4. Double-check your print file, your print height, etc. This might be your only chance to rescue the print.
 
-5. *RESUME :D* (and hope it works)
+5. _RESUME :D_ (and hope it works)
